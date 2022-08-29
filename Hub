@@ -1,0 +1,99 @@
+--Fardeen Hub FE v2.0 By Fardeen_YT#3147
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Fardeen Hub FE", "Ocean")
+
+--Main
+local Tab = Window:NewTab("Games")
+local Tab2 = Window:NewTab("Misc")
+local Tab3 = Window:NewTab("Scripts")
+local Tab4 = Window:NewTab("Credits")
+local Tab5 = Window:NewTab("Public Hubs")
+local Section = Tab:NewSection("Game Script Executors")
+local Section2 = Tab2:NewSection("Misc")
+local Section3 = Tab3:NewSection("Scripts")
+local Section4 = Tab4:NewSection("Credits")
+local Section5 = Tab5:NewSection("Public Hubs")
+
+--Public Hubs Section
+Section5:NewButton("Ultra Hub (Click to execute in any game)", "Clicking This Will Execute A Script.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Main"))()
+end)
+
+Section5:NewLabel("Supported Games")
+Section5:NewLabel("Mining Clicker Simulator")
+Section5:NewLabel("Tapping Simulator")
+Section5:NewLabel("Strong Simulator")
+Section5:NewLabel("Pet Posse")
+Section5:NewLabel("Firework Simulator")
+Section5:NewLabel("Weapon Fighting Simulator")
+Section5:NewLabel("Sonic Speed Simulator")
+Section5:NewLabel("Sword Simulator")
+Section5:NewLabel("Actors Tycoon")
+Section5:NewLabel("Mining Simulator 2")
+Section5:NewLabel("Magic Clicker")
+Section5:NewLabel("Ninja Training Simulator")
+Section5:NewLabel("Pet Simulator X")
+Section5:NewLabel("Anime Hero Simulator")
+Section5:NewLabel("Blade Simulator")
+Section5:NewLabel("Mow The Lawn")
+Section5:NewLabel("Race Clicker")
+Section5:NewLabel("Arsenal")
+Section5:NewLabel("Strongman Simulator")
+
+
+--Credits Section
+Section4:NewLabel("All Credits go to Fardeen_YT#3147.")
+Section4:NewLabel("If there are any issues, DM me on discord.")
+--Scripts Section
+Section3:NewButton("Infinite Yield", "Clicking This Will Execute Infinite Yield", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+end)
+
+Section3:NewButton("Dex Explorer", "Clicking This Will Execute Dex Explorer", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
+
+--Misc Section
+Section2:NewButton("Anti-AFK", "Clicking This Will Execute Anti-AFK", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+end)
+
+Section2:NewButton("Respawn", "Respawns Your Character.", function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = -999
+end)
+
+Section2:NewButton("Reduce Lag", "Reduces Your Lag.", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/p5sjdyYH"))()
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.Health = -999
+end)
+
+Section2:NewSlider("WalkSpeed", "Changes How Fast you walk.", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section2:NewSlider("JumpPower", "Changes How High you jump.", 1000, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
+--Games Section
+Section:NewButton("Pet Simulator X (BK Pets)", "Clicking This Will Execute BK Pets (PSX Only)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
+end)
+
+Section:NewButton("Race Clicker (Ultra Hub)", "Clicking This Will Execute A Script (RC Only)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Main"))()
+end)
+
+Section:NewButton("Tapping Legends X (Proxima Hub)", "Clicking This Will Execute A Script (TPX Only)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+end)
+
+Section:NewButton("Murder Mystery 2 (Unknown)", "Clicking This Will Execute A Script (MM2 Only)", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
+end)
+Section:NewButton("Arsenal (TR1V5 Software)", "Clicking This Will Execute A Script (Arsenal Only)", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Games/Arsenal", true))()
+end)
